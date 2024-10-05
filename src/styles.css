@@ -1,5 +1,127 @@
 /* styles.css */
-body {
-    background-color: rebeccapurple;
+@font-face {
+    font-family: Caveat;
+    font-weight: 400;
+    src: url(./fonts/Caveat/static/Caveat-Regular.ttf)
   }
-  
+
+  @font-face {
+    font-family: Caveat-Bold;
+    font-weight: 1000;
+    src: url(./fonts/Caveat/static/Caveat-Bold.ttf)
+  }
+
+  body {
+    background-color: rgb(255, 162, 23);
+    font-family: Caveat;
+}
+
+
+
+#pattern {
+    position: fixed;
+    background-image: url('./svg/sandwich-svgrepo-com.svg');
+    background-repeat: repeat;
+    background-size: 150px 150px; 
+    opacity: 0.07;
+    margin-top: 10px;
+    height: 900px;
+    width: 100%;
+}
+
+.content {
+    margin-top: 10px;
+    padding-top: 50px;
+    height: 900px;
+    
+
+}
+
+.title {
+    font-family: Caveat-Bold;
+    font-size: 4rem;
+}
+
+
+.about {
+    border: 8px solid rgb(214, 129, 18);
+    border-radius: 20px;
+    font-size: 3em;
+    padding: 20px;
+    margin: 50px;
+
+}
+
+.menu {
+    border: 8px solid rgb(214, 129, 18);
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin: 50px;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-title {
+    display: flex;
+    padding: 20px;
+    margin: 50px;
+    font-size: 3em;
+    justify-content: center;
+    font-family: Caveat-Bold;
+}
+
+.home {
+    border: 8px solid rgb(214, 129, 18);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    font-size: 3em;
+}
+
+#header {
+    margin: -10px;
+    height: 202px;
+    background-color: rgb(255, 208, 138);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+#sandwich-img {
+    height: 60px;
+    width: 60px;
+}
+
+#nav-bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.button {
+    font-family: caveat-bold;
+    font-size: 1.5em;
+    width: 200px;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0px;
+    background-color: rgb(255, 196, 106);
+    
+    
+}
+
+
+
+.tab-clicked {
+    background-color: rgb(255, 162, 23);
+}
+
+
